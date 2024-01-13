@@ -1,8 +1,8 @@
 package routers
 
 import (
+	"BlueBell/logger"
 	"github.com/gin-gonic/gin"
-	"goWeb/logger"
 )
 
 func Setup() *gin.Engine {

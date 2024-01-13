@@ -1,4 +1,4 @@
-module goWeb
+module BlueBell
 
 go 1.20
 

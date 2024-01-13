@@ -1,8 +1,8 @@
 package routers
 
 import (
+	"BlueBell/controllers"
 	"github.com/gin-gonic/gin"
-	"goWeb/controllers"
 )
 
 func InitAdminRouters(r *gin.Engine) {

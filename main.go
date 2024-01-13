@@ -1,15 +1,15 @@
 package main
 
 import (
+	"BlueBell/dao/mysql"
+	"BlueBell/dao/redis"
+	"BlueBell/logger"
+	"BlueBell/routers"
+	"BlueBell/settings"
 	"context"
 	"fmt"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
-	"goWeb/dao/mysql"
-	"goWeb/dao/redis"
-	"goWeb/logger"
-	"goWeb/routers"
-	"goWeb/settings"
 	"net/http"
 	"os"
 	"os/signal"
@@ -17,7 +17,7 @@ import (
 	"time"
 )
 
-// goWeb开发通用脚手架
+// BlueBell开发通用脚手架
 func main() {
 	//1.加载配置文件
 	if err := settings.Init(); err != nil {
